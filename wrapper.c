@@ -12,7 +12,14 @@ int multiply(int a,int b){
 }
 
 int division(int a,int b){
+ 
+   if(b!=0){
     return a/b;
+   }else {
+   fprintf(stderr,"Divion by zero! ");
+   exit(1);
+   }
+ 
 }
 
 int sub(int a,int b){
